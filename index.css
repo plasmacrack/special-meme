@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.bg {
+  posiiton: relative;
+  width: 1284px;
+  height: 2778px;
+  background-size: cover;
+/*   background-image: url("https://i.imgur.com/nqsBICV.png"); */
+  background-image: url("https://i.imgur.com/8EyI4gI.png");
+}
+
+#date {
+  color: black;
+  position: absolute;
+  width: 1284px;
+  text-align: center;
+  font-size: 75px;
+  top: 1120px;
+}
+
+#location {
+  color: black;
+  position: absolute;
+  width: 1044px;
+  height: 72px;
+  text-align: center;
+  font-size: 54px;
+  top: 1286px;
+  left: 120px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+#otter {
+  position: absolute;
+  top: 465px;
+  left: 60px;
+  animation: swim 7s linear infinite;
+  width: 322px;
+  height: 192px;
+}
+
+@keyframes swim {
+  0% {
+    left: 60px;
+    transform: scaleX(1);
+  }
+  49.99% {
+    transform: scaleX(1);
+  }
+  50% {
+    left: 900px;
+    transform: scaleX(-1);
+  }
+  99.99% {
+    transform: scaleX(-1);
+  }
+  100% {
+    left: 60px;
+    transform: scaleX(1);
+  }
+}
+
+#ripple1 {
+  animation: rippling1 0.7s linear infinite;
+}
+
+@keyframes rippling1 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+#ripple2 {
+  animation: rippling2 0.7s linear infinite;
+}
+
+@keyframes rippling2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#feet1 {
+  transform-origin: 30% 75%;
+  transform: rotate(-50deg);
+  animation: flip1 1.4s linear infinite;
+}
+
+@keyframes flip1 {
+  0% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+#feet2 {
+  transform-origin: 20% 75%;
+  transform: rotate(40deg);
+  animation: flip2 1.4s linear infinite;
+}
+
+@keyframes flip2 {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}

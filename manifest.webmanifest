@@ -1,0 +1,15 @@
+{
+  "background_color": "#72ABA8",
+  "description": "Help stop spread of COVID-19",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "460x0w.webp",
+      "sizes": "460x460",
+      "type": "image/webp"
+    }
+  ],
+  "name": "TraceTogether",
+  "short_name": "TraceTogether",
+  "start_url": "/index.html"
+}
