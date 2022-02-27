@@ -1,8 +1,10 @@
+screen.orientation.lock("portrait");
+
 var now = moment().format("D MMM, h.mA");
 document.getElementById("date").innerHTML = now;
 
 var platform = new H.service.Platform({
-  'apikey': 'ty2q_ksw2AHpX3Xl0rLMMv8KVur8BEpiBaA-hwBzWJU'
+  'apikey': 'zNt7PkvIDBA-4CiFc4mX0wa3GIIQYN_5KVH4tROc5uY'
 });
 
 var geocoder = platform.getSearchService();
